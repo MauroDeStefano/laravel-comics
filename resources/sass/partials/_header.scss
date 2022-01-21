@@ -1,0 +1,29 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+
+
+  nav{
+    
+    a{
+      float: left;
+      margin-left: 20px;
+      text-decoration: none;
+      color: black;
+      line-height: 145px;
+      border-bottom: 5px solid white;
+      &:hover{
+      cursor: pointer;
+      color: #0C7CEC;
+      border-bottom: 5px solid #0C7CEC;
+    }
+      
+    }
+    .active{
+      color: #0C7CEC;
+      border-bottom: 5px solid #0C7CEC;
+    }
+  }
+}
