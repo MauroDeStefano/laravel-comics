@@ -1,0 +1,75 @@
+.mds-jumbotron{
+  background-image: url("/img/jumbotron.jpg");
+  height: 500px;
+  width: 100%;
+}
+
+main{
+  background-color: #1C1C1C;
+  color: white;
+  padding-bottom: 20px;
+
+
+  .mds-current{
+  position: relative;
+
+  span{    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: -25px;
+    left: 0px;  
+    width: 200px;
+    height: 50px;
+    background-color: #0C7CEC;
+
+     &:hover{
+      cursor: pointer;
+    }
+  }
+  }
+
+  .mds-cards{ 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+     &:hover{
+      cursor: pointer;
+    }
+  }
+  .mds-load{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: #0C7CEC;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .mds-product-card{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 6);
+  
+    .mds-card{
+      display: inline-block;
+      padding-bottom: 20px;
+    }
+    img{
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      object-position: top;
+      
+    }
+  }
+ }

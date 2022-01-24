@@ -1,58 +1,55 @@
 footer{
 
-  .footer-top{
-    display: flex;
-    background-image: url("../assets/img/footer-bg.jpg");
+  .mds-footer-top{
+    background-image: url("/img/footer-bg.jpg");
     background-size: cover;
     height: 450px;
-    .link-list{
-      float: left;
-      width: 50%;
-      height: 100%;
-      padding: 60px 0;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
       
-      h2{
-        padding-left: 10px ;
+      
+      .mds-list-lists{
+        height: 100%;
       }
-      ul{
-        padding: 10px;
-        li{
+
+      .mds-link-list{
+        color: white;
+        float: left;
+        padding: 100px 0;
+        .mds-title-footer{
+          padding-left: 10px;
+          width: 50px!important;
+        }
+        .mds-li-footer{
           list-style: none;
           color: gray;
+
           &:hover{
             cursor: pointer;
           }
         }
       }
-    }
-    .dc-logo{
-      float: left;
-      width: 50%;
+
+    .mds-dc-logo{
       height: 100%;
-      background-image: url("../assets/img/dc-logo-bg.png");
+      background-image: url("/img/dc-logo-bg.png");
       background-position: center;
       background-size: cover ;
     }
-    
+  
   }
   
   
-  .footer-bottom{
+  .mds-footer-bottom{
     width: 100%;
     height: 100px;
     background-color: #303030;
     display: flex;
     align-items: center;
     
-    .container{
+    .mds-container{
       display: flex;
       justify-content: space-between;
       
-      .sign{
+      .mds-sign{
         color: white;
         border: 2px solid #008CFF;
         text-decoration: none;
@@ -63,7 +60,7 @@ footer{
           cursor: pointer;
         }
       }
-      .social{
+      .mds-social{
         display: flex;
         color: #0087FF;
         display: flex;
@@ -85,4 +82,8 @@ footer{
       }
     } 
   }
+}
+
+.mds-resolver{
+  width: 150px;
 }

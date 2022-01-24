@@ -1,37 +1,42 @@
 <footer>
-  <div class="footer-top">
-    <div class="container">
-      <div class="link-list ">
+  <div class="mds-footer-top ">
+    <div class="container ">
+      <div class="row">
+        <div class="mds-list-lists col-6">
         @foreach(config('footer') as $links)
           
-        <div>
-          <h2>{{$links['name']}}</h2>
-          <ul>
-            @foreach ($links['links'] as $link)
-              <li>
-                {{ $link['name'] }}
-              </li>
-            </ul>
-            @endforeach
+          <div class="mds-link-list clearfix">
+        
+            <h2 class="mds-title-footer col-2">{{$links['name']}}</h2>
+               
+              @foreach ($links['links'] as $link)
+                 <div class="mds-resolver">
+                <li class="mds-li-footer">
+                  {{$link}}
+                </li>
+                </div>
+              @endforeach
+              
+          </div>
+          @endforeach
+        
+          <div class="mds-dc-logo col-6">
         </div>
-      </div>
-      @endforeach
-      
-      <div class="dc-logo">
       </div>
     </div>
   </div>
-  {{-- <div class="footer-bottom clearfix">
-    <div class="container">
-      <div class="sign">
+  </div>
+  <div class="mds-footer-bottom clearfix">
+    <div class="mds-container container">
+      <div class="mds-sign">
         <a>SIGN-UP NOW!</a>
       </div>
-      <div class="social">
+      <div class="mds-social">
         <div> FOLLOW US </div>
-        <div class="icon" v-for="(icon, ii) in socialIcons" :key="`socialIcons${ii}`">
-          <img :src="icon.name" alt="">
+        <div class="icon" >
+          <img src="" alt="">
         </div>
       </div>
     </div>  
-  </div> --}}
+  </div>
 </footer>
